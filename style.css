@@ -1,0 +1,41 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family:'sans-serif';
+    background:linear-gradient(to bottom right,blue,rgb(55, 0, 255));
+    
+}
+.todo-grid,
+.cart{
+    display: grid;
+    grid-template-columns: 200px 200px 100px ;
+    row-gap: 15px;
+    column-gap: 40px;
+    font-size: 20px;
+}
+.cart{
+    margin-bottom: 20px;
+}
+.head-cart{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.place,.date,.add-cart{
+    height: 30px;
+    outline: none;
+
+    background-color: grey;
+}
+.todo-grid{
+    
+
+}
