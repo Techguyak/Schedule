@@ -12,3 +12,12 @@ body{
 .cart{
     margin-bottom: 20px;
 }
+.head-cart{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+      
+}
+.lhead-cart{
+    background-color:aqua ;
+}
