@@ -28,7 +28,7 @@ for (let i=0;i<=cart.length-1;i++){
     const html = `
     <div>${name}</div>
     <div>${duedate}</div> 
-    <button onclick="
+    <button class="cart-btn" onclick="
     cart.splice(${i},1);
     todolists();
     ">Delete</button>`;
