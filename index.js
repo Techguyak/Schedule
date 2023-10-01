@@ -26,8 +26,8 @@ for (let i=0;i<=cart.length-1;i++){
     let {duedate} = todolist
     console.log(todolist);
     const html = `
-    <div>${name}</div>
-    <div>${duedate}</div> 
+    <div class ="cartname">${name}</div>
+    <div class="cartdate">${duedate}</div> 
     <button class="cart-btn" onclick="
     cart.splice(${i},1);
     todolists();
