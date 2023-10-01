@@ -31,6 +31,7 @@ header{
  padding-left: 30px ;
  font-size: 20px;
  font-weight: bold;
+ cursor: pointer;
 }
 .duedate{
     height: 40px;
@@ -41,6 +42,7 @@ header{
     color: white;
     padding: 2px;
     border-radius: 30px;
+    cursor: pointer;
 }
 ::-webkit-calendar-picker-indicator{
     background-color: #ffffff;
@@ -56,6 +58,7 @@ header{
     font-size: 18px;
     font-weight: bolder;
     color: #ffffff;
+    cursor: pointer;
 }
 .todo-grid{
   color: white;
@@ -72,12 +75,47 @@ header{
     font-size: 18px;
     font-weight: bolder;
     color: #ffffff;
+    cursor: pointer;
 }
 .cartname{
     font-size: 25px;
     padding-left:20px ;
+    cursor: pointer;
 }
 .cartdate{
-    font-size: px;
+    font-size:;
     text-align: center;
+    cursor: pointer;
+}
+@media (max-width:420px){
+    header{
+        font-size: 16px;
+    }
+    .todo-grid,
+.cart{
+    display: grid;
+    grid-template-columns: 300px 50px ;
+    align-items: center;
+    column-gap: 3px;
+    font-size: 20px;
+    row-gap: 20px;
+}
+    .duedate,.cartdate{
+        display: none;
+    }
+    .head-cart{
+        margin-top: 50px;
+
+
+    }
+    .add-cart,.cart-btn,.plol{
+        height: 30px;
+    }
+    .add-cart,.cart-btn{
+        font-size: 13px;
+        padding: 2px;
+    }
+    .todo-grid{
+        border-radius: 20px;
+    }
 }
