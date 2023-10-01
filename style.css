@@ -1,12 +1,17 @@
 body{
-    background-color: blue;
+    background-color: rgb(2, 2, 58);
+}
+header{
+    font-size: 23px;
+    text-align: center;
+    color: white;
 }
 .todo-grid,
 .cart{
     display: grid;
-    grid-template-columns: 200px 200px 100px ;
-    row-gap: 15px;
-    column-gap: 40px;
+    grid-template-columns: 500px 100px 100px ;
+    align-items: center;
+    column-gap: px;
     font-size: 20px;
 }
 .cart{
@@ -15,9 +20,22 @@ body{
 .head-cart{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 90px;
       
 }
 .lhead-cart{
-    background-color:aqua ;
+}
+.plol{
+ height: 40px;
+ border-radius:40px;
+ outline: none;
+}
+.duedate{
+    height: 30px;
+}
+.add-cart{
+    height: 50px;
+    background-color: orange;
+    border: none;
+    border-radius: 40px;
 }
