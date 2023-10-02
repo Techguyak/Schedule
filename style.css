@@ -43,6 +43,7 @@ header{
     padding: 2px;
     border-radius: 30px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 ::-webkit-calendar-picker-indicator{
     background-color: #ffffff;
@@ -83,7 +84,6 @@ header{
     cursor: pointer;
 }
 .cartdate{
-    font-size:;
     text-align: center;
     cursor: pointer;
 }
@@ -105,8 +105,6 @@ header{
     }
     .head-cart{
         margin-top: 50px;
-
-
     }
     .add-cart,.cart-btn,.plol{
         height: 30px;

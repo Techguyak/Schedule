@@ -18,6 +18,11 @@ function add_cart(){
   todolists();
 }
 
+document.querySelector('.add-cart').addEventListener('click',()=>{
+  add_cart();
+})
+
+
 function todolists(){
 let todoli = '';
 for (let i=0;i<=cart.length-1;i++){ 
