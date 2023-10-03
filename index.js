@@ -25,20 +25,20 @@ document.querySelector('.add-cart').addEventListener('click',()=>{
 
 function todolists(){
 let todoli = '';
-for (let i=0;i<=cart.length-1;i++){ 
-    const todolist = cart[i];
-    let {name} = todolist;
-    let {duedate} = todolist
-    console.log(todolist);
-    const html = `
-    <div class ="cartname">${name}</div>
-    <div class="cartdate">${duedate}</div> 
-    <button class="cart-btn" onclick="
-    cart.splice(${i},1);
-    todolists();
-    ">Delete</button>`;
-    todoli += html;
-}
+
+cart.forEach( (todolist,index) => {
+  let {name} = todolist;
+  let {duedate} = todolist
+  console.log(todolist);
+  const html = `
+  <div class ="cartname">${name}</div>
+  <div class="cartdate">${duedate}</div> 
+  <button class="cart-btn del-btn" onclick="
+  cart.splice(${index},1);
+  todolists();
+  ">Delete</button>`;
+  todoli += html;
+});
   console.log(todoli);
   document.querySelector('.panel').
   innerHTML =todoli;
