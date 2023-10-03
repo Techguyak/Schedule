@@ -33,13 +33,16 @@ cart.forEach( (todolist,index) => {
   const html = `
   <div class ="cartname">${name}</div>
   <div class="cartdate">${duedate}</div> 
-  <button class="cart-btn del-btn" onclick="
-  cart.splice(${index},1);
-  todolists();
-  ">Delete</button>`;
+  <button class="cart-btn del-btn">Delete</button>`;
   todoli += html;
 });
   console.log(todoli);
   document.querySelector('.panel').
   innerHTML =todoli;
+document.querySelectorAll('.del-btn').forEach((del_btn,index)=> {
+    del_btn.addEventListener('click',()=>{
+      cart.splice(index,1);
+  todolists();
+    });
+});
 }
